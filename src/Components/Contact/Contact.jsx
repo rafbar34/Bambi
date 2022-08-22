@@ -6,9 +6,9 @@ import email from '../../assets/mail.png';
 import home from '../../assets/home.png';
 export const Contact = ({ myRef }) => {
   return (
-    <section ref={myRef} className='h-screen w-full flex items-start'>
+    <section ref={myRef} className='h-screen w-full mt-14 flex items-center'>
       <div className='h-auto w-full mt-28 GlassEffect flex-col flex items-center'>
-        <div className='h-1/5 mb-7 text-4xl flex justify-center w-full mt-9'>
+        <div className='h-1/5 mb-7  text-4xl flex justify-center w-full mt-9'>
           Kontakt
         </div>
         <div className=' w-full space-y-10 flex flex-col flex-wrap justify-center items-center pr-10 pl-10'>
@@ -18,19 +18,20 @@ export const Contact = ({ myRef }) => {
                 <p>Możesz się z nami skontaktować przez:</p>
                 <p className='pt-5 flex'>
                   email: bok@phbambi.pl{' '}
-                  <img className='ml-8' width={25} src={email} />
+                  <img className='ml-5' width={25} src={email} />
                 </p>
                 <p className='pt-5 flex'>
-                  telefon: 146811892{' '}
+                  telefon: 14 681 18 92{' '}
                   <img className='ml-5' width={25} src={phone} />
                 </p>
                 <p className='pt-5 flex'>
-                  telefon: 508191070{' '}
+                  telefon: 508 191 070{' '}
                   <img className='ml-5' width={25} src={phone2} />
                 </p>
                 <p className='pt-5 flex'>
-                  Adres: Drogowców 10B, 39-200 Dębica{' '}
-                  <img className='ml-6' width={25} src={home} />
+                  Adres: Drogowców 10B, 39-200 Dębica
+                  <p className=''>
+                  <img className='ml-4 mr-5' width={25} src={home} /></p>
                 </p>
               </div>
             </div>

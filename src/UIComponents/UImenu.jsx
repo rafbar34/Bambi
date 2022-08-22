@@ -1,7 +1,6 @@
 import React from 'react';
 import logo2 from '../assets/logo2.png';
 export const Menu = ({myRefAboutsUs, myRefCooperation, myRefPartners, myRefContact}) => {
-  console.log(myRefAboutsUs)
   const executeScroll = (myRef) =>{
     myRef.current.scrollIntoView({behavior: 'smooth'});
 }
