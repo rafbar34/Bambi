@@ -12,13 +12,13 @@ export const HomgePage = () => {
   const myRefPartners = useRef(null)
   const myRefContact = useRef(null)
   return (
-    <div className='h-full HomeBackground w-full'>
+    <main className='h-full HomeBackground w-full'>
       <Menu  myRefAboutsUs={myRefAboutsUs} myRefCooperation={myRefCooperation} myRefPartners= {myRefPartners} myRefContact={myRefContact}/>
       <LogoPage/>
       <AboutUs myRef={myRefAboutsUs} />
       <Cooperation  myRef={myRefCooperation}/>
       <Partners myRef={myRefPartners}/>
       <Contact myRef={myRefContact}/>
-    </div>
+    </main>
   );
 };

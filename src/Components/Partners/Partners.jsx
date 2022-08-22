@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import partners from '../../assets/partners.png';
 import algida from '../../assets/Algida.png';
 import koral from '../../assets/Koral.png';
@@ -7,12 +7,12 @@ import aviko from '../../assets/Aviko.png';
 import Aos from 'aos';
 import { PartnersLogoList } from './PartnersLogoList';
 
-export const Partners = ({myRef}) => {
+export const Partners = ({ myRef }) => {
   useEffect(() => {
-    Aos.init({duration: 1400});
+    Aos.init({ duration: 1400 });
   }, []);
   return (
-    <div ref={myRef} className='flex w-full h-screen justify-end'>
+    <section ref={myRef} className='flex w-full h-screen justify-end'>
       <div
         className='h-screen w-9/12 mr-24 flex items-start mt-20'
       >
@@ -30,11 +30,11 @@ export const Partners = ({myRef}) => {
                 Naszymi parnterami z którymi prowadzimy długoletnią współpracę
                 są :
               </div>
- <PartnersLogoList/>
+              <PartnersLogoList />
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

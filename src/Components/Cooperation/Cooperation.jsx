@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react';
-import shops from '../../assets/shops.png';
-import fastFood from '../../assets/fastFood.png';
-import schools from '../../assets/schools.png';
-import icesShops from '../../assets/iceshop.png';
+import FrozenFood1 from '../../assets/FrozenFood1.jpg'
+import FrozenFood2 from '../../assets/FrozenFood2.jpg'
+import FrozenFood3 from '../../assets/FrozenFood3.jpg'
 import Aos from 'aos';
 
 export const Cooperation = ({myRef}) => {
@@ -10,8 +9,8 @@ export const Cooperation = ({myRef}) => {
     Aos.init({duration: 1400});
   }, []);
   return (
-    <div ref={myRef} className='w-full min-h-screen flex pb-48 items-center'>
-      <div data-aos='fade-right' className=' min-h-[80%] h-auto GlassEffect  w-9/12  flex ml-20 items-center'>
+    <section ref={myRef} className='w-full min-h-screen flex pb-48 items-start'>
+      <div data-aos='fade-right' className=' h-screen GlassEffect  w-9/12  flex ml-20 items-start'>
         <div className='h-auto w-full mt-9 rounded-lg  flex-col flex items-center'>
           <div className='h-1/5 text-4xl pb-5 flex justify-center w-full'>
             Współpraca
@@ -31,23 +30,20 @@ export const Cooperation = ({myRef}) => {
                 <p className='pt-5'>Staramy się utrzymywać długie i obustronne
                 korzystne współprace.</p>
               </div>
-              <div className=' items-start rounded-lg flex justify-between mr-5 w-auto  '>
-                <div className='h-16  max-w-[10%] pt-2'>
-                  <img src={shops} alt='sklep' />
+              <div className=' items-center mt-6 rounded-lg space-x-2 flex justify-between mr-5 w-auto  '>
+                <div className='h-16 rounded-sm  max-w-[40%] '>
+                  <img src={FrozenFood1} className='rounded-md' alt='sklep' />
                 </div>
-                <div className='h-16 max-w-[7%] mb-5'>
-                  <img src={fastFood} alt='foodtruck' />
+                <div className='h-16 max-w-[25%] '>
+                  <img src={FrozenFood2} className='rounded-sm' alt='foodtruck' />
                 </div>
-                <div className='h-16  max-w-[10%] pt-5'>
-                  <img src={schools} alt='szkola' />
-                </div>
-                <div className='h-16  max-w-[7%]'>
-                  <img src={icesShops} alt='lodziarnia' />
+                <div className='h-16  max-w-[25%] '>
+                  <img src={FrozenFood3} className='rounded-sm' alt='szkola' />
                 </div>
               </div>
             </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

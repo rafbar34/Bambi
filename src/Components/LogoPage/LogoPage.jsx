@@ -7,12 +7,12 @@ export const LogoPage = () => {
     Aos.init({duration: 1400});
   }, []);
   return (
-    <div className='h-screen w-full'>
-      <div  className='w-full h-screen flex items-center justify-center text-8xl'>
-        <div data-aos='fade-up' data-aos-anchor-placement='center-up'>
+    <header className='h-screen w-full'>
+      <main  className='w-full h-screen flex items-center justify-center text-8xl'>
+        <section data-aos='fade-up' data-aos-anchor-placement='center-up'>
          <img className='rounded-xl' src={logo} alt='logo'/>
-        </div>
-      </div>
-    </div>
+        </section>
+      </main>
+    </header>
   );
 };

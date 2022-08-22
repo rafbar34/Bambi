@@ -34,15 +34,16 @@ export const PartnersLogoList = () => {
     ],
   };
   return (
-    <div className='w-full flex space-x-6 space-y-4 flex-wrap justify-around pt-5'>
+    <div className='w-full flex justify-center'>
+    <div className='w-3/5 flex space-x-7 space-y-4 flex-wrap justify-around pt-5'>
       {LogoData.logo.map((logo) => {
         return (
-          <div className='w-16 flex items-center'>
+          <div className='w-20 flex items-center'>
             {' '}
             <img src={logo} className='rounded-md' />
           </div>
         );
       })}
-    </div>
+    </div></div>
   );
 };
