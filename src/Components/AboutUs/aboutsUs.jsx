@@ -41,7 +41,7 @@ export const AboutUs = ({myRef}) => {
                 <div onClick={() =>
           window.scrollTo({
             left: 0,
-            top: 4500,
+            top: 5300,
             behavior: "smooth",
           })} className='border-2 mt-4 rounded-3xl MenuBackground px-4 text-xl py-1 text-white min-w-1/3'><button>Zapraszamy do współpracy</button></div>
               </div></div>

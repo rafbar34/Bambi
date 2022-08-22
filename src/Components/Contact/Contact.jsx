@@ -6,7 +6,7 @@ import email from '../../assets/mail.png';
 import home from '../../assets/home.png';
 export const Contact = ({ myRef }) => {
   return (
-    <section ref={myRef} className='h-screen w-full mt-14 flex items-center'>
+    <section ref={myRef} className='h-screen w-full mt-24 flex items-center'>
       <div className='h-auto w-full mt-28 GlassEffect flex-col flex items-center'>
         <div className='h-1/5 mb-7  text-4xl flex justify-center w-full mt-9'>
           Kontakt

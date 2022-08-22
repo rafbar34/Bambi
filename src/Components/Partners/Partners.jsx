@@ -12,7 +12,7 @@ export const Partners = ({ myRef }) => {
     Aos.init({ duration: 1400 });
   }, []);
   return (
-    <section ref={myRef} className='flex items-center w-full min-h-[85%] mt-24 justify-end'>
+    <section ref={myRef} className='flex items-center w-full pb-16 min-h-[85%] mt-24 justify-end'>
       <div 
         className='h-screen w-9/12 mr-24 flex items-center'
       >
