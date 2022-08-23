@@ -35,12 +35,12 @@ export const PartnersLogoList = () => {
   };
   return (
     <div className='w-full h-full flex justify-center'>
-    <div className='w-3/4 min-h-[85%]  flex space-x-7 flex-wrap justify-around pt-5'>
-      {LogoData.logo.map((logo) => {
+    <div className='w-3/4 min-h-[85%]  flex  flex-wrap justify-around pt-5'>
+      {LogoData.logo.map((logo, indexLogo) => {
         return (
-          <div className='w-20 ml-5 flex items-center'>
+          <div key={indexLogo} className='w-1/5 pl-2 flex items-center'>
             {' '}
-            <img src={logo} className='rounded-md' />
+            <img width={70} src={logo} alt='logoFirmy' className='rounded-md' />
           </div>
         );
       })}
