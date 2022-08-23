@@ -1,19 +1,20 @@
-import {useForm} from 'react-hook-form';
+import { useForm } from 'react-hook-form';
 import emailjs from '@emailjs/browser';
-import {ToastContainer, toast} from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
-import {useState} from 'react';
+import { useState } from 'react';
 const ContactForm = () => {
   const {
     register,
     handleSubmit,
     reset,
-    formState: {errors},
+    formState: { errors },
   } = useForm();
   const [responseCode, setCodeResponse] = useState();
-  console.log( process.env.REACT_APP_SERVICE_ID)
+  const [counterLetters, setCounterLetters] = useState(0);
+  let lengthLetters = 700 - counterLetters;
   const onSubmit = async (data) => {
-    const {name, email, subject, message} = data;
+    const { name, email, subject, message } = data;
     try {
       const templateParams = {
         name,
@@ -123,11 +124,12 @@ const ContactForm = () => {
                       name='message'
                       {...register('message', {
                         required: true,
-                        
+
                       })}
                       className='border-2 max-h-24 h-24 mb-2 pt-2 pl-5 mt-2 border-gray-400 rounded-3xl'
                       placeholder='Wiadomość'
                       maxLength={700}
+                      onChange={(e) => { setCounterLetters((e.target.value).length) }}
                     ></textarea>
                     {errors.message && (
                       <span className='text-red-400'>
@@ -135,7 +137,7 @@ const ContactForm = () => {
                       </span>
                     )}
                   </div>
-                  <div className='text-xs w-full text-right pl-7 text-gray-500'> max 700 znaków</div>
+                  <div className='text-xs w-full text-right pl-7 text-gray-500'> max {lengthLetters} znaków</div>
                 </div>
                 {responseCode && responseCode === 200 ? (
                   ''
