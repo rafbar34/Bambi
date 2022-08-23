@@ -20,7 +20,7 @@ export const AboutUs = ({ myRef, myRefIntoForm }) => {
               <div className=' mr-5  h-auto rounded-lg ml-2 p-5'>
                 <div className='h-auto space-y-2 text-2xl px-14 text-center'>
                   <span className='font-bold text-2xl px-5 text-center '>
-                    Bambi jest profesjonalną hurtownią zapaotrującą sklepy
+                    Bambi jest profesjonalną hurtownią zaopatrującą sklepy
                     detaliczne i punkty gastronomiczne w żywność, prowadzącą swoją
                     działalność na terenie: Rzeszowa, Dębicy, Tarnowa.
                   </span>
