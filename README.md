@@ -1,4 +1,4 @@
 Bambi
 Website Wholesale frozen food
 
-https://rafbar34.github.io/Bambi-host/
+https://phbambi.home.pl/
