@@ -2,7 +2,8 @@ import React from 'react';
 import logo2 from '../assets/logo2.png';
 export const Menu = ({myRefAboutsUs, myRefCooperation, myRefPartners, myRefContact}) => {
   const executeScroll = (myRef) =>{
-    myRef.current.scrollIntoView({behavior: 'smooth'});
+    console.log(myRef)
+    myRef.current.scrollIntoView({behavior: 'smooth', block: "center"});
 }
   return (
     <div className='h-20 w-full z-10  fixed MenuBackground text-white flex justify-between items-center rounded-b-xl '>

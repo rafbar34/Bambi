@@ -5,9 +5,9 @@ export const AboutUs = ({ myRef, myRefIntoForm }) => {
   useEffect(() => {
     Aos.init({ duration: 1400 });
   }, []);
-  const executeScroll = (myRefIntoForm) =>{
-    myRefIntoForm.current.scrollIntoView({behavior: 'smooth'});
-}
+  const executeScroll = (myRefIntoForm) => {
+    myRefIntoForm.current.scrollIntoView({ behavior: 'smooth' });
+  }
   return (
     <div>
       <div ref={myRef} className=' min-h-screen h-auto pr-20 pl-20 w-full flex items-start'>
@@ -20,28 +20,26 @@ export const AboutUs = ({ myRef, myRefIntoForm }) => {
               <div className=' mr-5  h-auto rounded-lg ml-2 p-5'>
                 <div className='h-auto space-y-2 text-2xl px-14 text-center'>
                   <span className='font-bold text-2xl px-5 text-center '>
-                    Bambi jest profesjonalną hurtownią zaopatrującą sklepy
-                    detaliczne i punkty gastronomiczne w żywność, prowadzącą swoją
-                    działalność na terenie: Rzeszowa, Dębicy, Tarnowa.
+                    Bambi jest profesjonalną hurtownią zaopatrującą sklepy detaliczne i punkty gastronomiczne w żywność, prowadzącą swoją działalność na terenie województwa podkarpackiego, świętokrzyskiego i małopolskiego.
                   </span>
                   <p className='text-gray-700 text-xl py-5'>
-                    Nasza firma jest prężnie rozwiajającą się hutrownią zajmującą
+                    Nasza firma jest prężnie rozwijającą się hutrownią zajmującą
                     się dystrybucją produktów takich jak: warzywa mrożone , owoce
                     mrożone, ryby mrożone, sosy, frytki, lody, sorbety, mrożone
                     wyroby mięsne, etc. Dzięki zdobytemu  doświadczeniu
                     w branży produktów mrożonych  jesteśmy zawsze
                     w stanie  doradzić Państwu jak najlepszy wybór  w zakresie
                     odpowiednich produktów będących przedmiotem naszej sprzedaży.
-                    Jesteśmy przekonani, że szeroki asortmen, ich
+                    Jesteśmy przekonani, że szeroki asortyment, ich
                     wspaniały smak oraz bardzo atrakcyjne ceny w pełni
                     zadowolą Państwa potrzeby i oczekiwania. Jednocześnie
                     bez obaw podejmujemy nowe wyzwania i rozbudowujemy naszą ofertę
                     zawsze biorąc pod uwagę opinię oraz sugestię klientów. Do
-                    Państwa dyzpozycji pozostaje profesjonalna kadra z wieloletnim
+                    Państwa dyspozycji pozostaje profesjonalna kadra z wieloletnim
                     doświadczeniem.
                   </p>
                   <div className='w-full flex items-center justify-center'>
-                    <div onClick={() =>executeScroll(myRefIntoForm)} className='border-2 mt-4 rounded-3xl MenuBackground px-4 text-xl py-1 text-white min-w-1/3'><button>Zapraszamy do współpracy</button></div>
+                    <div onClick={() => executeScroll(myRefIntoForm)} className='border-2 mt-4 rounded-3xl MenuBackground px-4 text-xl py-1 text-white min-w-1/3'><button>Zapraszamy do współpracy</button></div>
                   </div></div>
               </div>
             </div>
