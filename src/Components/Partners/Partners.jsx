@@ -14,10 +14,10 @@ export const Partners = ({ myRef }) => {
   return (
     <section ref={myRef} className='flex min-h-screen items-center w-full mt-24 pb-16 justify-end'>
       <div
-        className=' h-1/3 w-9/12 mr-24 flex items-start'
+        className=' h-1/3 min-w-min w-9/12 mr-10 flex items-start'
       >
-        <div data-aos='fade-left' className='h-1/2 w-full mr-1  rounded-lg GlassEffect flex-col flex items-center'>
-          <div className='h-1/5 text-4xl flex-col flex items-center justify-center w-full pt-9'>
+        <div data-aos='fade-left' className='h-1/2 w-full mr-1 min-w-fit  rounded-lg GlassEffect flex-col flex items-center'>
+          <div className='h-1/5 text-4xl flex-col px-14 flex items-center justify-center w-full pt-9'>
             <h4>Partnerzy</h4>
             <div className='w-[15%] py-3'>
               {' '}
