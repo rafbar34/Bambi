@@ -12,26 +12,28 @@ export const Contact = ({ myRef, myRefIntoForm }) => {
           <h4>Kontakt</h4>
         </div>
         <div className=' w-full space-y-10 mb-5 flex flex-col flex-wrap justify-center items-center pr-10 pl-10'>
-          <div className='flex min-w-[67%] justify-center items-center- w-1/2 h-3/4 '>
+          <div className='flex min-w-[76%] justify-center items-center- w-1/2 h-3/4 '>
             <div className='w-full text-xl bg-white rounded-lg p-5'>
-              <div className=' h-auto text-xl'>
+              <div className=' h-auto text-xl lg:text-lg'>
                 <p>Możesz się z nami skontaktować przez:</p>
                 <p className='pt-5 flex'>
                   email: bok@phbambi.pl{' '}
-                  <img className='ml-5' width={25} src={email} />
+                 <div> <img className='ml-5' width={25} src={email} /></div>
                 </p>
                 <p className='pt-5 flex'>
                   telefon: 14 681 18 92{' '}
+                  <div>
                   <img className='ml-5' width={25} src={phone} />
-                </p>
+                </div></p>
                 <p className='pt-5 flex'>
                   telefon: 508 191 070{' '}
+                  <div>
                   <img className='ml-5' width={25} src={phone2} />
-                </p>
+                </div></p>
                 <p className='pt-5 flex'>
                   Adres: Drogowców 10B, 39-200 Dębica
                   <p className=''>
-                  <img className='ml-4 mr-5' width={25} src={home} /></p>
+                 <div> <img className='ml-4 mr-5' width={25} src={home} /></div></p>
                 </p>
               </div>
             </div>

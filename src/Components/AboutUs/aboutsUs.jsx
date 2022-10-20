@@ -10,7 +10,7 @@ export const AboutUs = ({ myRef, myRefIntoForm }) => {
   }
   return (
     <div>
-      <div ref={myRef} className=' min-h-screen h-auto pr-20 pl-20 w-full flex items-start'>
+      <div ref={myRef} className=' min-h-screen h-auto w-full flex items-start'>
         <div data-aos='fade-up' className='h-auto  min-h-[75%] min-w-fit w-full mt-14 GlassEffect flex-col flex items-center'>
           <div className='h-1/5 text-4xl flex justify-center w-full mt-9'>
             <h4>O nas</h4>

@@ -14,7 +14,7 @@ export const HomgePage = () => {
   const myRefContact = useRef(null)
   const myRefIntoForm = useRef(null)
   return (
-    <main className='h-full HomeBackground w-full'>
+    <main className='h-full HomeBackground'>
       <Menu  myRefAboutsUs={myRefAboutsUs} myRefCooperation={myRefCooperation} myRefPartners= {myRefPartners} myRefContact={myRefContact}/>
       <LogoPage/>
       <AboutUs myRef={myRefAboutsUs} myRefIntoForm={myRefIntoForm} />

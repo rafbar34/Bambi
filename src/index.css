@@ -17,20 +17,13 @@ code {
     monospace;
 }
 body{
-  width: auto;
   background-image: url('/src/assets/ices.jpg');
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   font-family: 'Roboto', sans-serif;
 }
-html{
-  width: fit-content;
-  background-image: url('/src/assets/ices.jpg');
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+
 .MenuBackground{
 
   background: rgb(41,148,252);
