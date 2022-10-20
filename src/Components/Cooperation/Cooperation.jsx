@@ -10,14 +10,14 @@ export const Cooperation = ({ myRef }) => {
   }, []);
   return (
     <section ref={myRef} className='w-full min-h-screen h-auto mt-24  flex items-center'>
-      <div data-aos='fade-right' className=' min-h-[95%] GlassEffect  w-9/12  flex ml-20 items-start'>
+      <div data-aos='fade-right' className=' min-h-[95%]  GlassEffect  w-9/12  flex ml-14 items-start'>
         <div  className=' w-full mt-9 rounded-lg  flex-col flex items-center'>
           <div className='h-1/2 text-4xl pb-5 flex justify-center w-full'>
             <h4>Współpraca</h4>
           </div>
-          <div className='ml-5 bg-opacity-40 h-full  rounded-lg mr-4 m-2'>
+          <div className='ml-5 bg-opacity-40 h-full px-8 sm:px-14  rounded-lg mr-4 m-2'>
             <div className='text text-xl center pb-5'>
-              <ul className=' font-bold text-2xl'>
+              <ul className=' font-bold text-xl sm:text-2xl'>
                 {' '}
                 Zaopatujemy w najwyższej jakości produkty  takie obiekty jak:{' '}
               </ul>

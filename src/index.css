@@ -23,14 +23,11 @@ body{
   background-size: cover;
   font-family: 'Roboto', sans-serif;
 }
-html{
-  width: fit-content;
 
-}
 .MenuBackground{
 
   background: rgb(41,148,252);
-  background: linear-gradient(90deg, rgba(41,148,252,0.6674019949776786) 10%, rgba(4,175,245,0.5553571770505077) 24%, rgba(3,94,245,0.6001751042213761) 50%, rgba(3,179,245,0.8410714627647934) 87%, rgba(0,121,255,0.785049053801208) %);
+  background: linear-gradient(90deg, rgba(41,148,252,0.6674019949776786) 10%, rgba(4,175,245,0.5553571770505077) 24%, rgba(3,94,245,0.6001751042213761) 50%, rgba(3,179,245,0.8410714627647934) 87%, rgba(0,121,255,0.785049053801208) 95%);
 }
 .FirstScreenBackground {
   background: rgb(166,223,25);
